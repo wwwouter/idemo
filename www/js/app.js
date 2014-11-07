@@ -48,6 +48,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
+    .state('tab.container-add', {
+      url: '/container-add',
+      views: {
+        'tab-container-add': {
+          templateUrl: 'templates/tab-container-add.html',
+          controller: 'ContainerAddCtrl'
+        }
+      }
+    })
+
     .state('tab.friends', {
       url: '/friends',
       views: {

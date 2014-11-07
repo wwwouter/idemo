@@ -1,9 +1,10 @@
-<!-- 
-  Create tabs with an icon and label, using the tabs-positive style. 
-  Each tab's child <ion-nav-view> directive will have its own 
+<!--
+  Create tabs with an icon and label, using the tabs-positive style.
+  Each tab's child <ion-nav-view> directive will have its own
   navigation history that also transitions its views in and out.
 -->
 <ion-tabs class="tabs-icon-top">
+
 
 
   <!-- Dashboard Tab -->
@@ -11,6 +12,11 @@
     <ion-nav-view name="tab-dash"></ion-nav-view>
   </ion-tab>
 
+
+  <!-- Container Add Tab -->
+  <ion-tab title="Add Container" icon="icon ion-plus" href="#/tab/container-add">
+    <ion-nav-view name="tab-container-add"></ion-nav-view>
+  </ion-tab>
 
   <!-- Friends Tab -->
   <ion-tab title="Friends" icon="icon ion-heart" href="#/tab/friends">

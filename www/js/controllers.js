@@ -1,6 +1,24 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {
+.controller('DashCtrl', ['$scope', function($scope) {
+
+}])
+
+.controller('ContainerAddCtrl', function($scope,$state) {
+
+    $scope.input = {
+        containerid:""
+    };
+
+
+     $scope.save = function() {
+        console.log($scope.input.containerid);
+
+        $state.go('tab.dash')
+  };
+
+
+
 })
 
 .controller('FriendsCtrl', function($scope, Friends) {
